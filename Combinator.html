@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Combinator Selector </title>
+</head>
+<body>
+    <style>
+        div p { /* no 1 */
+            color:red;
+        }
+        div > p { /* no 2 */
+            background-color: yellow;
+        }
+        div + p { /* no 3 */
+            background-color: darkgray;
+        }
+        div ~ p { /* no 4 */
+        color: cyan;
+        }
+    </style>
+    <div>
+        <p>This is a paragraph. Terangkan kesimpulan tentang selektr no 1 pada pargraph ini </p>
+        <p>This is a paragraph. Terangkan kesimpulan tentang selektr no 2 pada pargraph ini </p> 
+    </div>
+    <p>This is a paragraph. Terangkan kesimpulan tentang selektr no 3 pada pargraph ini </p>
+    <p>This is a paragrapah. Terangkan kesimpulan tentang selektr no 4 pada pargraph ini </p>
+</body>
+</html>
